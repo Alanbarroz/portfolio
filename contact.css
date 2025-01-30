@@ -1,0 +1,14 @@
+body {
+    color: #fff;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+footer a {
+    margin: 20px;
+    text-align: center
+}
+
+h1 {
+    color: aqua
+}
