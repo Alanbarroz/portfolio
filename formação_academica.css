@@ -60,4 +60,6 @@ nav a:hover {
 
 footer a:hover {
     color: aqua
+    margin: 20px;
+    text-align: center
 }
