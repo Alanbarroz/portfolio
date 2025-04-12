@@ -72,5 +72,30 @@ empresarial; Gestão de vendas; Ferramentas de Gestão.
 <p>youtube</p>
 </footer>
 </div>
+     <script>
+    function ajustarLayout() {
+      const largura = window.innerWidth;
+      const altura = window.innerHeight;
+      const proporcao = largura / altura;
+
+      const container = document.getElementById("container");
+      const info = document.getElementById("info");
+
+      // Mostra a proporção no texto
+      info.textContent = `Proporção atual: ${proporcao.toFixed(2)} (largura: ${largura}, altura: ${altura})`;
+
+      // Altera tamanho ou estilo com base na proporção
+      if (proporcao > 1.5) {
+        container.style.transform = "scale(1)";
+        container.style.backgroundColor = "#1e90ff";
+      } else if (proporcao > 1) {
+        container.style.transform = "scale(0.9)";
+        container.style.backgroundColor = "#ff9800";
+      } else {
+        container.style.transform = "scale(0.8)";
+        container.style.backgroundColor = "#e91e63";
+      }
+    }
+    </script>
 </body>
 </html>
